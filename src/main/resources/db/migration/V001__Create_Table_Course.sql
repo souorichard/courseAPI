@@ -1,7 +1,7 @@
 CREATE TABLE Course (
     id              INT             NOT NULL    auto_increment,
-    nameCourse      VARCHAR(20)     NOT NULL,
-    period          VARCHAR(10)     NOT NULL,
+    nameCourse      VARCHAR(200)    NOT NULL,
+    period          VARCHAR(200)     NOT NULL,
     PRIMARY KEY(id)
 );
 

@@ -1,6 +1,6 @@
 CREATE TABLE Students (
     id              INT             NOT NULL    auto_increment,
-    nameStudents    VARCHAR(20)     NOT NULL,
+    nameStudents    VARCHAR(200)    NOT NULL,
     ageStudents     INT             NOT NULL,
     idCourse        INT             NOT NULL,
     PRIMARY KEY(id)
@@ -13,3 +13,6 @@ INSERT INTO Students(nameStudents, ageStudents, idCourse) VALUES ('Carol', 17, 2
 INSERT INTO Students(nameStudents, ageStudents, idCourse) VALUES ('Yuri', 17, 3);
 INSERT INTO Students(nameStudents, ageStudents, idCourse) VALUES ('João', 17, 4);
 INSERT INTO Students(nameStudents, ageStudents, idCourse) VALUES ('Michel', 24, 4);
+INSERT INTO Students(nameStudents, ageStudents, idCourse) VALUES ('Pedro', 16, 1);
+INSERT INTO Students(nameStudents, ageStudents, idCourse) VALUES ('Vinicius', 17, 3);
+INSERT INTO Students(nameStudents, ageStudents, idCourse) VALUES ('Erick', 16, 2);

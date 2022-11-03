@@ -1,8 +1,11 @@
 package com.richard.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Entity
@@ -13,10 +16,14 @@ public class Course {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    @Column
+    @Column(name="namecourse")
     private String nameCourse;
 
     @Column
     private String period;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "course")
+    private List<Students> students = new ArrayList<>();
 
 }

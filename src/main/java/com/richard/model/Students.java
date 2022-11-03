@@ -13,10 +13,14 @@ public class Students {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    @Column
+    @Column(name="namestudents")
     private String nameStudents;
 
-    @Column
+    @Column(name="agestudents")
     private Integer ageStudents;
+
+    @ManyToOne
+    @JoinColumn(name = "idcourse")
+    private Course course;
 
 }
